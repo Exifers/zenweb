@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "zenweb",
+  "description": "Youtube without distractions",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "styles.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+ytd-browse,
+ytd-masthead #container #end,
+ytd-masthead #container #start,
+tp-yt-app-drawer,
+#home-page-skeleton {
+    display: none !important;
+}
+
+ytd-masthead #container {
+    justify-content: center !important;
+}
+
+body[data-url="https://www.youtube.com/"] #masthead-container {
+    top: 50% !important;
+    transform: translate(0, -50%) !important;
+}
+
+/* search suggestions */
+.gstl_50.sbdd_a {
+    display: none !important;
+}
+
+ytd-item-section-renderer[section-identifier="sid-wn-chips"] {
+    display: none !important;
+}
+
+ytd-item-section-renderer[section-identifier="comment-item-section"] {
+    display: none !important;
+}
+
+#above-the-fold>#top-row {
+    display: none !important;
+}
+
+#above-the-fold>#bottom-row {
+    display: none !important;
+}
+
+iron-selector#chips {
+    display: none !important;
+}
+
+#voice-search-button {
+    display: none !important;
+}
+
+ytd-section-list-renderer > #header-container {
+    display: none !important;
+}
+
+ytd-secondary-search-container-renderer {
+    display: none !important;
+}
+
+/* left sidebar on small screens */
+ytd-mini-guide-renderer {
+    display: none !important;
+}
+
+/* shorts */
+ytd-reel-shelf-renderer {
+    display: none !important;
+}
+
+ytd-playlist-panel-renderer yt-formatted-string.publisher {
+    display: none !important;
+}
